@@ -16,11 +16,7 @@ user_data = database['users']
 
 
 async def present_user(user_id : int):
-    found = user_data.find_one({'_id': user_id})
-    if found:
-        return True
-    else:
-        return False
+    return bool(found := user_data.find_one({'_id': user_id}))
 
 async def add_user(user_id: int):
     user_data.insert_one({'_id': user_id})
@@ -28,11 +24,7 @@ async def add_user(user_id: int):
 
 async def full_userbase():
     user_docs = user_data.find()
-    user_ids = []
-    for doc in user_docs:
-        user_ids.append(doc['_id'])
-        
-    return user_ids
+    return [doc['_id'] for doc in user_docs]
 
 async def del_user(user_id: int):
     user_data.delete_one({'_id': user_id})
