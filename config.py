@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5632971423:AAGKoPHtE9zKvbuk8Nnc3xvWebVBn5pfATI")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6794664235:AAGIHPV9WGyLZmMP_w9djdS4wK9aBH5uPhI")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "16674747"))
@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "16674747"))
 API_HASH = os.environ.get("API_HASH", "b2de5fa3bd61ca397fbb650b0435d792")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001619038196"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001817115017"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1983980399"))
@@ -33,7 +33,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001898397254"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001899541435"))
 
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
@@ -46,7 +46,7 @@ try:
         for x in (
             os.environ.get(
                 "ADMINS",
-                "5476364982 1735137313 5407115463 1735137313 5289178185 1735137313 5307017976",
+                "5488952329",
             ).split()
         )
     ]
